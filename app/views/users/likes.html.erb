@@ -1,0 +1,12 @@
+<ul class="list-unstyled">
+  <li>お気に入り一覧</li>
+  <% @user.fav_microposts.each do |micropost| %>
+    <li class="media mb-3">
+      <div class="media-body">
+        <div>
+          <p class="mb-0"><%= micropost.content %></p>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ul>
